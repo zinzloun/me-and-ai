@@ -1,0 +1,10 @@
+services:
+  grc-api:
+    build: .
+    container_name: grc-api
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/data
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
