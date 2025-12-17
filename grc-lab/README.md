@@ -29,7 +29,7 @@ grc-lab/
 
 ### Software
 * **[Ollama](https://ollama.com/):** Running natively on the host machine.
-* **Docker & Docker Compose:** To orchestrate the API and UI.
+* **Docker & Docker Compose:** To orchestrate the API.
 * **Python 3.10+** (Optional, for utility scripts like wiping the DB).
 
 ---
