@@ -1,7 +1,7 @@
 # 🛡️ Local GRC-LLM Lab
 
 A private, high-performance **Retrieval-Augmented Generation (RAG)** laboratory designed for GRC (Governance, Risk, and Compliance) analysts.
-This lab allows you to query framework documents (NIST CSF 2.0, SP 800-53, ISO Mappings) locally and securely using your GPU.
+This lab allows you to query framework documents (NIST CSF 2.0, SP 800-53, ISO Mappings) locally using your GPU.
 
 ## 🚀 Overview
 The system indexes PDF documents from a local folder into a **FAISS** vector database. 
@@ -50,4 +50,4 @@ Ensure Ollama is accessible by the Docker containers:
    ```bash
    docker compose up --build -d
 
-Open http://localhost:8000/docs to start querying.
+Open http://localhost:8000/docs to get started.
