@@ -17,7 +17,7 @@ grc-lab/
 │   └── vectorstore/     # FAISS database (auto-generated)
 ├── docker-compose.yaml  # Docker orchestration
 └── README.md            # Documentation
-
+```
 ---
 
 ## 📋 Requirements
