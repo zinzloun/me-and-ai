@@ -49,8 +49,9 @@ ollama pull llama3.2:3b
 ollama pull nomic-embed-text
 ```
 ## 🚀 Getting Started
-1. Place NIST/ISO PDFs in the `./data` folder.
-2. Start the lab:
+1. Place NIST/ISO PDFs in the `./data` folder
+2. Start Docker
+3. Start the lab:
    ```bash
    docker compose up --build -d
 
