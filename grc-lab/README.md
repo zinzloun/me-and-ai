@@ -26,12 +26,11 @@ grc-lab/
 * **GPU:** NVIDIA GeForce RTX 4050 Laptop (6GB VRAM) or better.
 * **Storage:** ~10GB for Docker images and LLM models.
 * **OS:** Windows 10/11 with WSL2 or Linux.
+This lab has been created on Winzoz 11 with WSL2, so I assume that Docker Desktop is also used
 
 ### Software
 * **[Ollama](https://ollama.com/):** Running natively on the host machine.
 * **Docker & Docker Compose:** To orchestrate the API.
-* **Python 3.10+** (Optional, for utility scripts like wiping the DB).
-
 ---
 
 ## ⚙️ Configuration
@@ -52,7 +51,8 @@ ollama pull nomic-embed-text
 1. Place NIST/ISO PDFs in the `./data` folder
 2. Start Docker
 3. Start the lab:
-   ```bash
-   docker compose up --build -d
-
-Open http://localhost:8000/docs to get started.
+```
+docker compose up --build -d
+```
+4. Start grc-api container
+Wait 5 minutes to build indexes, then open http://localhost:8000/docs to get started.
