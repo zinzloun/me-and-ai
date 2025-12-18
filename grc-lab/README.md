@@ -43,11 +43,11 @@ Ensure Ollama is accessible by the Docker containers:
 ```
 ollama serve
 ```
-1. Pull the required models (open another console):
-   ```powershell
-   ollama pull llama3.2:3b
-   ollama pull nomic-embed-text
-   
+3. Pull the required models (open another console):
+```powershell
+ollama pull llama3.2:3b
+ollama pull nomic-embed-text
+```
 ## 🚀 Getting Started
 1. Place NIST/ISO PDFs in the `./data` folder.
 2. Start the lab:
