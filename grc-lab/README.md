@@ -39,7 +39,11 @@ grc-lab/
 ### 1. Ollama Setup (Host)
 Ensure Ollama is accessible by the Docker containers:
 1. Set the environment variable: `OLLAMA_HOST=0.0.0.0`
-2. Pull the required models:
+1. Start the server
+```
+ollama serve
+```
+1. Pull the required models (open another console):
    ```powershell
    ollama pull llama3.2:3b
    ollama pull nomic-embed-text
