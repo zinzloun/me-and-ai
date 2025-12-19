@@ -1,9 +1,9 @@
-# 🛡️ Local GRC-LLM Lab
+# 🤖 Local GRC-LLM Lab
 
 A private, high-performance **Retrieval-Augmented Generation (RAG)** laboratory designed for GRC (Governance, Risk, and Compliance) analysts.
 This lab allows you to query framework documents (NIST CSF 2.0, SP 800-53, ISO Mappings) locally using your GPU.
 
-## 🚀 Overview
+## 🛡️ Overview
 The system indexes PDF documents from a local folder into a **FAISS** vector database. 
 When a user asks a question, the system retrieves the most relevant technical "chunks" and uses **Llama 3.2 3B** to generate an audit-ready answer with source citations.
 At the monent the only available endpoint is API.
@@ -52,9 +52,10 @@ ollama pull llama3.2:3b
 ollama pull nomic-embed-text
 ```
 ## 🚀 Getting Started
-1. Place NIST/ISO PDFs in the `./data` folder
-2. Start Docker
-3. Start the lab:
+1.Clone or download this repo
+2. Eventually place other relevant PDFs in the `./data` folder
+3. Start Docker
+4. Start the lab:
 ```
 docker compose up --build -d
 ```
