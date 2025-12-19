@@ -60,13 +60,17 @@ ollama pull nomic-embed-text
 docker compose up --build -d
 ```
 4. Start grc-api container
+```
+docker start grc-api
+```
 Wait 5 minutes to allow building indexes, then open http://localhost:8000/docs to get started.
 
 ## Appendix: useful commands
+### Ollama
 ```
-#list ollama model
+#list model
 ollama list
 
-#list ollama process
+#list process
 ollama ps
 ```
