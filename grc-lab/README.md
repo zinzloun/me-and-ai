@@ -53,7 +53,7 @@ ollama pull nomic-embed-text
 ```
 ## 🚀 Getting Started
 1.Clone or download this repo
-2. Eventually place other relevant PDFs in the `./data` folder
+2. Eventually place other relevant PDFs in the `./data` folder (at the moment only PDF file are supported)
 3. Start Docker
 4. Start the lab:
 ```
