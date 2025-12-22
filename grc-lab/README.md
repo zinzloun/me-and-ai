@@ -63,7 +63,7 @@ ollama pull phi3:mini
 ```
 4. Check Ollama is running: http://localhost:11434
 ## 🚀 Getting Started
-1.Clone or download this repo
+1. Clone or download this repo
 2. Eventually place other relevant PDFs in the `./data` folder (at the moment only PDF file are supported)
 3. Start Docker
 4. Start the lab:
