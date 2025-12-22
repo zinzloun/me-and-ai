@@ -146,3 +146,4 @@ deepteam --version
 wget https://raw.githubusercontent.com/zinzloun/me-and-ai/refs/heads/main/grc-lab/red_team_assessment.py
 python3 red_team_assessment.py
 ```
+It will take quite a lot of time, more or less 30-45 minutes, so go to grab a ☕︎ :)
