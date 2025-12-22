@@ -126,6 +126,12 @@ pip install --upgrade pip
 pip install requests deepteam deepeval
 
 ```
+### Verify installation
+```bash
+deepteam --version
+|_ deepteam version 1.0.4
+```
+
 ### Run the test script
 ```bash
 wget https://raw.githubusercontent.com/zinzloun/me-and-ai/refs/heads/main/grc-lab/red_team_assessment.py
