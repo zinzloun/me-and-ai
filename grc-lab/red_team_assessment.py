@@ -58,7 +58,7 @@ def chatbot_target(prompt: str, history: Optional[List] = None) -> str:
     Callback function to send adversarial prompts to the target RAG Chatbot.
     """
     try:
-        response = requests.get(CHATBOT_API_URL, params={"query": prompt}, timeout=120)
+        response = requests.get(CHATBOT_API_URL, params={"query": prompt}, timeout=180)
         return response.json().get("answer", "No answer provided.")
     except Exception as e:
         return f"Error: {str(e)}"
