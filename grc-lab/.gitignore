@@ -1,2 +1,2 @@
 # Ignore vectorstore directory under grc-lab/data
-/grc-lab/data/vectorstore/
+/data/vectorstore/
