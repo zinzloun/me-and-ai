@@ -32,6 +32,15 @@ This lab has been created on Windows 11 with WSL2, so I assume that Docker Deskt
 ### Software
 * **[Ollama](https://ollama.com/):** Running natively on the my host machine.
 * **Docker & Docker Compose:** To orchestrate the API and FAISS.
+*  **Cuda toolkit:**
+```
+nvidia-smi
+Mon Dec 22 16:57:56 2025
++-----------------------------------------------------------------------------+
+| NVIDIA-SMI 528.76       Driver Version: 528.76       CUDA Version: 12.0     |
+|-------------------------------+----------------------+----------------------+
+```
+
 ---
 
 ## ⚙️ Configuration
