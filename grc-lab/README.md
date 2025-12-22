@@ -76,3 +76,56 @@ ollama list
 #list process
 ollama ps
 ```
+
+# LLM Red Teaming Lab: NIST & ISO 27001 RAG Security
+
+This repository contains an automated Red Teaming laboratory designed to evaluate the security posture of an AI Chatbot specialized in **NIST CSF** and **ISO 27001** compliance. 
+
+The lab simulates adversarial attacks to identify vulnerabilities in a Retrieval-Augmented Generation (RAG) system, focusing on data privacy and technical robustness.
+
+## 🏗️ Architecture
+
+- **Target Model:** Llama 3.2 (3B) - Serving as a RAG-based Compliance Expert.
+- **Judge/Attacker Model:** Phi-3 Mini - Used as the "Adversarial Simulator" and "Security Evaluator".
+- **Environment:**
+	- **Networking** WSL Hyper-V
+	- **Host:** Windows 11 with Ollama - GPU Accelerated - RTX 4050 (IP: `172.31.192.1`).
+    - **Attack VM:** Kali Linux running on **WSL2** (IP: `172.31.199.52`).
+- **Framework:** [DeepTeam](https://github.com/confident-ai/deepteam) for LLM Red Teaming.
+
+
+
+## 🛡️ Vulnerabilities Tested
+
+The assessment covers 13 types of vulnerabilities across 4 core domains:
+1. **Prompt Leakage:** Attempts to extract system instructions or internal guardrails.
+2. **PII Leakage:** Probing the RAG database for sensitive personal identifiable information (e.g., employee records).
+3. **Misinformation:** Checking if the model hallucinates or provides unsupported claims about ISO/NIST standards.
+4. **Robustness:** Testing the model's resistance to conversation hijacking and input overreliance.
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Python 3.10+
+- Ollama (running on host machine at `172.31.199.52:11434`)
+- Chatbot API (running on port `8000`)
+
+### Installation & Virtual Environment Setup
+Clone the repository and set up the Python virtual environment:
+
+```bash
+# Create the virtual environment
+python3 -m venv venvDT
+
+# Activate the environment
+source venvDT/bin/activate
+
+# Install dependencies
+pip install --upgrade pip
+pip install requests deepteam deepeval
+
+```
+### Run the test script
+```bash
+cd venvDT
+wget 
