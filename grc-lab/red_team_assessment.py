@@ -9,7 +9,7 @@ from deepeval.models.base_model import DeepEvalBaseLLM
 
 # --- CONFIGURATION ---
 # Target and Judge are hosted on the host machine/Ollama accessible via WSL2 Bridge
-HOST_IP = "172.31.199.52"
+HOST_IP = " 172.31.192.1" # this is the IP of the host windows machine, eventually change it
 OLLAMA_URL = f"http://{HOST_IP}:11434/api/generate"
 CHATBOT_API_URL = f"http://{HOST_IP}:8000/ask"
 

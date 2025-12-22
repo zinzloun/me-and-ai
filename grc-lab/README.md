@@ -128,4 +128,6 @@ pip install requests deepteam deepeval
 ### Run the test script
 ```bash
 cd venvDT
-wget 
+wget https://raw.githubusercontent.com/zinzloun/me-and-ai/refs/heads/main/grc-lab/red_team_assessment.py
+python3 red_team_assessment.py
+```
