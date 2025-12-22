@@ -63,18 +63,14 @@ ollama pull phi3:mini
 ```
 4. Check Ollama is running: http://localhost:11434
 ## 🚀 Getting Started
-1. Clone or download this repo
-2. Eventually place other relevant PDFs in the `./data` folder (at the moment only PDF file are supported)
-3. Start Docker
-4. Start the lab:
+- Clone or download this repo
+- Eventually place other relevant PDFs in the `./data` folder (at the moment only PDF file are supported)
+- Build and start the container:
 ```
 docker compose up --build -d
-```
-4. Start grc-api container
-```
 docker start grc-api
 ```
-Wait 5 minutes to allow building indexes, then open http://localhost:8000/docs to get started.
+Wait 5 minutes to allow building indexes (vector store), then open http://localhost:8000/docs to get started.
 
 ## Appendix: useful commands
 ### Ollama
