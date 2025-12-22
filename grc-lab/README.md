@@ -46,11 +46,13 @@ set OLLAMA_HOST=0.0.0.0
 ```
 ollama serve
 ```
-3. Open another prompt and pull the required models (just do it once):
+3. Open another prompt and pull the required models (takes log time but you need just do it once):
 ```powershell
 ollama pull llama3.2:3b
 ollama pull nomic-embed-text
+ollama pull llama3.1:8b
 ```
+4. Check Ollama is running: http://localhost:11434
 ## 🚀 Getting Started
 1.Clone or download this repo
 2. Eventually place other relevant PDFs in the `./data` folder (at the moment only PDF file are supported)
