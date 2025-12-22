@@ -84,9 +84,10 @@ ollama ps
 
 # LLM Red Teaming Lab: NIST & ISO 27001 RAG Security
 
-This repository contains an automated Red Teaming laboratory designed to evaluate the security posture of an AI Chatbot specialized in **NIST CSF** and **ISO 27001** compliance. 
-
+This repository contains an automated Red Teaming laboratory designed to evaluate the security posture of the above AI Chatbot. 
 The lab simulates adversarial attacks to identify vulnerabilities in a Retrieval-Augmented Generation (RAG) system, focusing on data privacy and technical robustness.
+
+The laboratory environment uses a tiered model approach. While the 3B model (Llama 3.2) is sufficient for the RAG task, the 3.8B model (Phi-3) used for evaluation represents the 'minimum viable' judge. For production-grade red teaming, increasing the judge size to 8B+ parameters significantly reduces JSON parsing errors during complex vulnerability assessments.
 
 ## 🏗️ Architecture
 
@@ -97,8 +98,6 @@ The lab simulates adversarial attacks to identify vulnerabilities in a Retrieval
 	- **Host:** Windows 11 with Ollama - GPU Accelerated - RTX 4050 (IP: `172.31.192.1`).
     - **Attack VM:** Kali Linux running on **WSL2** (IP: `172.31.199.52`).
 - **Framework:** [DeepTeam](https://github.com/confident-ai/deepteam) for LLM Red Teaming.
-
-
 
 ## 🛡️ Vulnerabilities Tested
 
