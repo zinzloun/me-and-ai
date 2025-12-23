@@ -46,7 +46,11 @@ Mon Dec 22 16:57:56 2025
 ## ⚙️ Configuration
 
 ### 1. Ollama Setup (Host)
-Ensure Ollama is accessible by the Docker containers:
+Add the following to windows path environment variable: 
+			
+	C:\Users\<your user>\AppData\Local\Programs\Ollama
+		
+Ensure Ollama is accessible to all network interfaces:
 1. Set the environment variable:
 ```
 set OLLAMA_HOST=0.0.0.0
