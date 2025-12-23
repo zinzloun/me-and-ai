@@ -82,7 +82,7 @@ ollama list
 ollama ps
 ```
 
-# LLM Red Teaming Lab: NIST & ISO 27001 RAG Security
+# 👿 LLM Red Teaming Lab: NIST & ISO 27001 RAG Security
 
 This repository contains an automated Red Teaming laboratory designed to evaluate the security posture of the above AI Chatbot. 
 The lab simulates adversarial attacks to identify vulnerabilities in a Retrieval-Augmented Generation (RAG) system, focusing on data privacy and technical robustness.
