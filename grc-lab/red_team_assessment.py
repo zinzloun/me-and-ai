@@ -37,7 +37,7 @@ class OllamaJudge(DeepEvalBaseLLM):
             }
         }
         try:
-            response = requests.post(OLLAMA_URL, json=payload, timeout=150)
+            response = requests.post(OLLAMA_URL, json=payload, timeout=180)
             raw_output = response.json().get("response", "")
             
             # Basic cleanup: ensuring the output starts and ends with curly braces
