@@ -141,8 +141,9 @@ deepteam --version
 wget https://raw.githubusercontent.com/zinzloun/me-and-ai/refs/heads/main/grc-lab/red_team_assessment.py
 python3 red_team_assessment.py
 ```
+1. It will generate the attacks
 ![MUS](./dt-tes01.png)
-
+2. Then it will evaluate the vulnerabilities 
 ![MUS](./dt-tes02.png)
 It will take quite a lot of time, more or less 20-30 minutes, so go to grab a ☕︎
 
