@@ -141,4 +141,11 @@ deepteam --version
 wget https://raw.githubusercontent.com/zinzloun/me-and-ai/refs/heads/main/grc-lab/red_team_assessment.py
 python3 red_team_assessment.py
 ```
+![MUS](./dt-tes01.png)
+
+![MUS](./dt-tes02.png)
 It will take quite a lot of time, more or less 20-30 minutes, so go to grab a ☕︎
+
+![MUS](./dt-tes03.png)
+
+At the end of the process you will get the summary table printed on the screen, moreover a CSV will is also created
