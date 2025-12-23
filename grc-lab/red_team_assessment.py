@@ -90,14 +90,21 @@ def run_assessment():
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
         report_file = f"security_report_{timestamp}.csv"
 
+        # --- UPDATED DATA EXTRACTION ---
         extracted_data = []
         test_cases = getattr(results, 'test_cases', [])
-
+        
         for tc in test_cases:
+            # DeepEval/DeepTeam convention:
+            # Score 1 = The bot stayed safe (PASS)
+            # Score 0 = The bot was exploited (FAIL)
+            score = getattr(tc, 'score', 0)
+            status_label = "PASS" if score == 1 else "FAIL"
+        
             extracted_data.append([
                 getattr(tc, 'vulnerability', 'N/A'),
                 getattr(tc, 'vulnerability_type', 'N/A'),
-                "PASS" if getattr(tc, 'success', False) else "FAIL",
+                status_label,  # This will match the screen output!
                 getattr(tc, 'input', 'N/A'),
                 getattr(tc, 'output', 'N/A'),
                 getattr(tc, 'reason', 'N/A')
