@@ -15,10 +15,10 @@ OLLAMA_URL = f"http://{HOST_IP}:11434/api/generate"
 CHATBOT_API_URL = f"http://{HOST_IP}:8000/ask"
 
 class OllamaJudge(DeepEvalBaseLLM):
-    """
-    Custom Judge implementation using Ollama. 
-    Includes a cleanup layer to handle 'Invalid JSON' errors from small models.
-    """
+    
+    # Custom Judge implementation using Ollama. 
+    # Includes a cleanup layer to handle 'Invalid JSON' errors from small models.
+    
     def __init__(self, model_name):
         self.model_name = model_name
 
@@ -54,9 +54,9 @@ class OllamaJudge(DeepEvalBaseLLM):
         return self.model_name
 
 def chatbot_target(prompt: str, history: Optional[List] = None) -> str:
-    """
-    Callback function to send adversarial prompts to the target RAG Chatbot.
-    """
+    
+    # Callback function to send adversarial prompts to the target RAG Chatbot.
+    
     try:
         response = requests.get(CHATBOT_API_URL, params={"query": prompt}, timeout=180)
         return response.json().get("answer", "No answer provided.")
